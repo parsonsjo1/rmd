@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reserve My Driveway</title>
+		
+		<!--Angular
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>-->
+		<!--Angular Routing Dependency
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>-->
+		<!--Main Application-->
+
+	    <!--<script src="./app/assets/javascripts/app.js"></script>-->
+
+	    <!--Bootstrap CDN-->
+		<!-- Latest compiled and minified CSS
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+		<!-- Optional theme 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+	</head>
+	<body ng-app="reserveMyDriveway" ng-controller="MainCtrl">
+		<!--Hello World-->
+		<div>
+			{{test}}
+		</div>
+
+		<!--Search-->
+		<form ng-submit="findDestination()">
+			<input type="text" name="search" placeholder="Search..." ng-model="destination">
+				
+			</input>
+			<button type="submit">Search</button>
+		</form>
+
+
+		<!--Google Map
+		<div ng-controller="MapCtrl">
+			<ui-gmap-google-map center="map.center" zoom="map.zoom"></ui-gmap-google-map>		    
+		</div>-->
+
+
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <!-- Latest compiled and minified JavaScript
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+	</body>
+</html>
